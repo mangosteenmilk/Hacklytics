@@ -9,7 +9,7 @@ import ssl
 #for mac users to bypass certificate error "invalidation"
 ssl._create_default_https_context = ssl._create_unverified_context
 
-st.title("test title")
+st.title("Covid Vaccine")
 
 url_csv = ('https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv')
 
@@ -30,4 +30,5 @@ data = load_data()
 
 st.subheader('Number of People Vaccinated per 100')
 st.line_chart(data.people_fully_vaccinated_per_hundred)
+
 
