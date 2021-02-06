@@ -20,6 +20,7 @@ def load_data():
 
     return data
 
+
 #load data
 data = load_data()
 
@@ -31,5 +32,3 @@ st.subheader('Number of People Vaccinated per 100')
 st.line_chart(data.people_fully_vaccinated_per_hundred)
 
 
-st.subheader('Human Life Expectancy')
-st.line_chart(data.life_expectancy)
