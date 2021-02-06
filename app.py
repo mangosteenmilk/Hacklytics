@@ -21,22 +21,9 @@ def load_data():
     return data
 
 
-'Updating data...'
-
-# Add a placeholder
-latest_iteration = st.empty()
-bar = st.progress(0)
-
-for i in range(100):
-  # Update the progress bar with each iteration.
-  latest_iteration.text(f'Gathering data {i+1}')
-  bar.progress(i + 1)
-  time.sleep(0.1)
-
 #load data
 data = load_data()
 
-'...and now we\'re done!'
 
 
 
@@ -44,5 +31,3 @@ data = load_data()
 st.subheader('Number of People Vaccinated per 100')
 st.line_chart(data.people_fully_vaccinated_per_hundred)
 
-
-st.line_chart(data.new_cases_smoothed)
