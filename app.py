@@ -25,6 +25,8 @@ data = load_data()
 
 
 
+
+
 st.subheader('Number of People Vaccinated per 100')
 st.line_chart(data.people_fully_vaccinated_per_hundred)
 
