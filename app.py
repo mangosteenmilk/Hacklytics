@@ -13,6 +13,17 @@ st.title("Covid Vaccine")
 
 url_csv = ('https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv')
 
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://www.ortho-max.net/wp-content/uploads/2018/01/Medical-Background-5.jpg")
+    }
+
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 #define function that loads in data with specified number of rows
 def load_data():
@@ -30,5 +41,3 @@ data = load_data()
 
 st.subheader('Number of People Vaccinated per 100')
 st.line_chart(data.people_fully_vaccinated_per_hundred)
-
-
