@@ -1,4 +1,4 @@
-# Hacklytics
+# Hacklytics 2021 (Daily COVID Vaccinations)
 
 ## Getting started
 You will need to navigate to your terminal/command prompt/anaconda prompt and type in
